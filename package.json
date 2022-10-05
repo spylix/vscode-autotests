@@ -2,9 +2,17 @@
   "name": "autotests",
   "displayName": "Auto Unit Tests",
   "description": "Run JavaScript unit tests from VSCode",
-  "version": "0.0.1",
+  "icon": "images/icon.png",
+  "keywords": [
+    "javascript",
+    "tests",
+    "unit tests",
+    "debugging"
+  ],
+  "version": "0.0.2",
   "license": "MIT",
   "author": "Paweł Stepaniuk",
+  "publisher": "PawelStepaniuk",
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -13,7 +21,9 @@
     "url": "https://github.com/spylix/vscode-autotests.git"
   },
   "categories": [
-    "Other"
+    "Debuggers",
+    "Other",
+    "Testing"
   ],
   "activationEvents": [
     "onCommand:autotests.runTests"

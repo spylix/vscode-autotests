@@ -10,6 +10,8 @@ A button is added in the top right corner, as marked on the image, that runs the
 
 ![Function presentation](images/readme-presentation.png)
 
+The button and context menu option for running tests is shown only for test files and folders that have `test` or `.spec.` in their name.
+
 ## Extension Settings
 
 You can customize the extension with these commands:
@@ -18,12 +20,17 @@ You can customize the extension with these commands:
 
 ## Release Notes
 
-### 1.0.0
+### 0.0.1
 
 Initial release of Auto Unit Tests:
 
 - Test button has been added
 - Settings for configuration of the test command
+
+### 0.0.3
+
+- Test button will be shown only for specific files (`*test*` and `.spec.` in name)
+- Added `Run tests` to context menu for test folders and files
 
 ## For more information
 

@@ -9,7 +9,7 @@
     "unit tests",
     "debugging"
   ],
-  "version": "0.0.2",
+  "version": "0.0.4",
   "license": "MIT",
   "author": "Paweł Stepaniuk",
   "publisher": "PawelStepaniuk",
@@ -44,16 +44,23 @@
       {
         "command": "autotests.runTests",
         "icon": "$(debug-alt)",
-        "title": "Test"
+        "title": "Run tests"
       }
     ],
     "menus": {
       "editor/title": [
         {
-          "when": "activeEditor",
+          "when": "resourceFilename =~ /.test.|.spec.|-test./",
           "command": "autotests.runTests",
           "alt": "autotests.runTests",
           "group": "navigation"
+        }
+      ],
+      "explorer/context": [
+        {
+          "when": "resourceFilename =~ /test|.spec./",
+          "command": "autotests.runTests",
+          "alt": "autotests.runTests"
         }
       ]
     }
